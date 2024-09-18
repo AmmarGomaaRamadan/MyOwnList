@@ -27,7 +27,10 @@ namespace MyOwnList
             list.AddElement(4);
             list.AddElement(5);
             list.AddElement(6);
+            list.print();
             Console.WriteLine("The size is " + list.Size());
+            AList<int> rev=list.reverseElements();
+           rev.print();
 
             //Console.WriteLine("the element"+ list.GetElementAt(0)); 
             Console.ReadKey();

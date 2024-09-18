@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MyOwnList
 {
-    public class AList<T>
+    public class AList<T> 
     {
         T[] arr;
         int currentIndex;
@@ -21,14 +23,16 @@ namespace MyOwnList
         // Add new element to the list
         public void AddElement(T element)
         {
-            if (++currentIndex < arr.Length - 1)
+            if (++currentIndex <= arr.Length-1)
             {
-                //++currentIndex;
+                
                 arr[currentIndex] = element;
+                //currentIndex++;
             }
             else
             {
                 Extended();//extend the array when reach the max size
+                AddElement(element);
             }
         }
         //return the elemet on some index
@@ -61,6 +65,16 @@ namespace MyOwnList
             return currentIndex + 1;
         }
 
+    
+        public AList<T> reverseElements()
+        {
+            AList<T> revList= new AList<T>();
+            for(int i = currentIndex;i>=0;i--)
+            {
+                revList.AddElement(arr[i]);
+            }
+            return revList;
+        }
         private void Shift(int index)
         {
             for (int i = index; i < currentIndex; i++) 
@@ -73,8 +87,9 @@ namespace MyOwnList
         private void Extended()
         {
             T[] newArr= new T[currentIndex + 20];
+            currentIndex--;
             
-            for(int i=0;i<=currentIndex;i++)
+            for(int i=0;i<=currentIndex ;i++)
             {
                 newArr[i] = arr[i];
             }
@@ -83,10 +98,11 @@ namespace MyOwnList
 
         public void print()
         {
-            foreach(T i in arr)
+            for(int i=0;i<=currentIndex;i++ )
             {
-                Console.WriteLine(i);
+                Console.WriteLine(arr[i]);
             }
         }
+
     }
 }
