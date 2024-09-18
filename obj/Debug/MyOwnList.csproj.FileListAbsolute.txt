@@ -1,0 +1,7 @@
+C:\Users\DELL\source\repos\MyOwnList\bin\Debug\MyOwnList.exe.config
+C:\Users\DELL\source\repos\MyOwnList\bin\Debug\MyOwnList.exe
+C:\Users\DELL\source\repos\MyOwnList\bin\Debug\MyOwnList.pdb
+C:\Users\DELL\source\repos\MyOwnList\obj\Debug\MyOwnList.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\MyOwnList\obj\Debug\MyOwnList.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\MyOwnList\obj\Debug\MyOwnList.exe
+C:\Users\DELL\source\repos\MyOwnList\obj\Debug\MyOwnList.pdb
