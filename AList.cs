@@ -6,10 +6,12 @@ using System.Runtime.Remoting.Messaging;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+
 
 namespace MyOwnList
 {
-    public class AList<T> 
+    public class AList<T> :IEnumerable 
     {
         T[] arr;
         int currentIndex;
@@ -101,6 +103,41 @@ namespace MyOwnList
             for(int i=0;i<=currentIndex;i++ )
             {
                 Console.WriteLine(arr[i]);
+            }
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return new AListItrator(this);
+        }
+
+        class AListItrator : IEnumerator //inner class to implement itrator
+        {
+            AList<T> AList; // refernce to be equal to the reference of the cuurnt object of AList
+            int index;//The index to Itrate on the elements of the elements of the current object
+            public object Current 
+            {
+                get
+                {
+                    return AList.arr[index];
+                }
+            }
+            public AListItrator(AList<T> list)
+            {
+                this.AList = list;//make Alist of the itrator refer to the current object of Alist
+                index = -1;
+            }
+            public bool MoveNext()
+            {
+                index++;
+                if(index>AList.currentIndex)
+                    return false;
+                return true;
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
             }
         }
 

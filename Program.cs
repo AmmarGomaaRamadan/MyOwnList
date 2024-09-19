@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace MyOwnList
 {
@@ -27,10 +28,15 @@ namespace MyOwnList
             list.AddElement(4);
             list.AddElement(5);
             list.AddElement(6);
-            list.print();
+           // list.print();
             Console.WriteLine("The size is " + list.Size());
             AList<int> rev=list.reverseElements();
-           rev.print();
+          // rev.print();
+
+            foreach(int x in rev)
+            {
+                Console.WriteLine(  x);
+            }
 
             //Console.WriteLine("the element"+ list.GetElementAt(0)); 
             Console.ReadKey();

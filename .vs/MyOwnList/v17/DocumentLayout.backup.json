@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\MyOwnList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|C:\\Users\\DELL\\source\\repos\\MyOwnList\\alist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|solutionrelative:alist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|C:\\Users\\DELL\\source\\repos\\MyOwnList\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|c:\\users\\dell\\source\\repos\\myownlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|c:\\users\\dell\\source\\repos\\myownlist\\alist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1D427F3-B482-4270-A844-0F093E107FEC}|MyOwnList.csproj|solutionrelative:alist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AList.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\MyOwnList\\AList.cs",
               "RelativeDocumentMoniker": "AList.cs",
               "ToolTip": "C:\\Users\\DELL\\source\\repos\\MyOwnList\\AList.cs",
               "RelativeToolTip": "AList.cs",
-              "ViewState": "AgIAABgAAACAZmZmZmYmwCIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAABg//////8owHYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T12:04:59.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\MyOwnList\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\MyOwnList\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABQAAAAAMzMzMzPzvxUAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\MyOwnList\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAABUAAACAmZmZmZkbwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T11:14:48.401Z",
               "EditorCaption": ""
