@@ -22,6 +22,13 @@ namespace MyOwnList
             currentIndex = -1;
         }
 
+        public T this[int index]
+        {
+
+            get { return this.GetElementAt(index); }
+            set { this.arr[index] = value; }
+        }
+
         // Add new element to the list
         public void AddElement(T element)
         {
